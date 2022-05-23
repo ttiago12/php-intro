@@ -13,7 +13,7 @@ $categorias [] = 'idoso';
 
 
 $nome = 'Eduardo';
-$idade=8;
+$idade=18;
 
 //var_dumpp ; mostra o tipo da variavel
 
@@ -27,7 +27,13 @@ if ($idade >=6 && $idade <= 12){
     }
     
 }else if($idade >=13 && $idade < 18){
-    echo "ADOLESCENTE";
+    for ($i = 0; $i <= count($categorias);$i++){
+        if($categorias[$i] == 'adolescente')
+            echo "o nadador ".$nome." Compente na categoria adolescente";
+    }
 }else{
-    echo "ADULTO";
-}
+    for ($i = 0; $i <= count($categorias);$i++){
+        if($categorias[$i] == 'adulto')
+            echo "o nadador ".$nome." Compente na categoria adulto";
+        }   
+    } 
