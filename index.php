@@ -3,7 +3,7 @@
 //declarou uma variavel = atribuiu a ela uma lista
 $categorias = [];
 // populamos a lista com os valores
-$categorias [] = 'infatil';
+$categorias [] = 'infantil';
 $categorias [] = 'adolescente';
 $categorias [] = 'adulto';
 $categorias [] = 'idoso';
@@ -13,7 +13,7 @@ $categorias [] = 'idoso';
 
 
 $nome = 'Eduardo';
-$idade= 18 ;
+$idade=8;
 
 //var_dumpp ; mostra o tipo da variavel
 
@@ -21,7 +21,11 @@ $idade= 18 ;
 //var_dump($idade);
 
 if ($idade >=6 && $idade <= 12){
-    echo "INFATIL";
+    for ($i = 0; $i <= count($categorias);$i++){
+        if($categorias[$i] == 'infantil')
+            echo "o nadador ".$nome." Compente na categoria infantil";
+    }
+    
 }else if($idade >=13 && $idade < 18){
     echo "ADOLESCENTE";
 }else{
